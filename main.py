@@ -8,7 +8,7 @@ api_key = os.environ.get("LLM_API_KEY")
 # Define function to query LLM
 def query_llm(prompt):
   url = "https://api.llm.ai/v1/generate"
-  headers = {"Authorization": f"Bearer {api_key}"}
+  headers = {"Authorization": f"Bearer {sk-proj-K1SzPJk6YzGJopgNmH0MT3BlbkFJ2k6r3gjrZibuZ9pXOftp}"}
   data = {"prompt": prompt, "max_tokens": 1000}
   response = requests.post(url, headers=headers, json=data)
   response.raise_for_status()
